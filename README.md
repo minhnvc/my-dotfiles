@@ -1,6 +1,6 @@
 Just install by the order below:
 
-## Fish shell
+## 1. Fish shell
 
 No | Name | Desc | Link
 ------------- | ------------- | ------------- | -------------
@@ -13,7 +13,7 @@ No | Name | Desc | Link
 7 | nvm.fish | nvm for fish | https://github.com/jorgebucaran/nvm.fish
 8 | tmux | terminal multiplexer | https://github.com/tmux/tmux/wiki
 
-## Node global package
+## 2. Node global package
 No | Name 
 ------------- | ------------- 
 1 | Node - nvm install latest
@@ -22,7 +22,7 @@ No | Name
 4 | prettier
 
 
-## Neovim
+## 3. Neovim
 No | Name | Desc | Link
 ------------- | ------------- | ------------- | -------------
 1 | Neovim | 0.7.0+ | https://neovim.io/
