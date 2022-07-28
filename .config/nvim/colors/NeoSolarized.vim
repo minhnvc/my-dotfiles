@@ -119,7 +119,7 @@ let g:neosolarized_italic = get(g:, "neosolarized_italic", 0)
 let g:neosolarized_underline = get(g:, "neosolarized_underline", 1)
 
 " Appearance:
-let g:neosolarized_contrast = get(g:, "neosolarized_contrast", "normal")
+let g:neosolarized_contrast = get(g:, "neosolarized_contrast", "high")
 let g:neosolarized_diffmode = get(g:, "neosolarized_diffmode", "normal")
 let g:neosolarized_termBoldAsBright = get(g:, "neosolarized_termBoldAsBright", 1)
 let g:neosolarized_termtrans = get(g:, "neosolarized_termtrans", 0)
@@ -147,18 +147,18 @@ let colors_name = "NeoSolarized"
     let s:gui_base02      = "#073642"
     let s:gui_base01      = "#586e75"
     let s:gui_base00      = "#657b83"
-    let s:gui_base0       = "#839496"
-    let s:gui_base1       = "#93a1a1"
+    let s:gui_base0       = "#a9bfc2"
+    let s:gui_base1       = "#abbaba"
     let s:gui_base2       = "#eee8d5"
     let s:gui_base3       = "#fdf6e3"
-    let s:gui_yellow      = "#b58900"
-    let s:gui_orange      = "#cb4b16"
+    let s:gui_yellow      = "#e0aa02"
+    let s:gui_orange      = "#e35417"
     let s:gui_red         = "#dc322f"
     let s:gui_magenta     = "#d33682"
     let s:gui_violet      = "#6c71c4"
-    let s:gui_blue        = "#268bd2"
-    let s:gui_cyan        = "#2aa198"
-    let s:gui_green       = "#719e07" "experimental
+    let s:gui_blue        = "#2d9ded"
+    let s:gui_cyan        = "#38d9ce"
+    let s:gui_green       = "#8ac208" "experimental
     "let s:green       = "#859900" "original
 
     let s:term_mode       = "cterm"
@@ -532,8 +532,7 @@ exe "hi! ColorColumn"    .s:fmt_none   .s:fg_none   .s:bg_base02
 exe "hi! Cursor"         .s:fmt_none   .s:fg_base03 .s:bg_base0
 hi! link lCursor Cursor
 exe "hi! MatchParen"     .s:fmt_bold   .s:fg_red    .s:bg_base01
-
-"}}}
+"}}
 
 " vim syntax highlighting "{{{
 " ---------------------------------------------------------------------

@@ -1,4 +1,4 @@
-" Fundamentals "{{{
+" Fundamentals Plug 'EdenEast/nightfox.nvim'
 " ---------------------------------------------------------------------
 
 " init autocmd
@@ -23,9 +23,15 @@ set cmdheight=1
 set laststatus=2
 set scrolloff=10
 set expandtab
+set autoread
+set smartindent
 "let loaded_matchparen = 1
 set shell=fish
 set backupskip=/tmp/*,/private/tmp/*
+
+" relative line number
+set number relativenumber
+set nu rnu
 
 " incremental substitution (neovim)
 if has('nvim')
@@ -62,18 +68,21 @@ autocmd InsertLeave * set nopaste
 
 " Add asterisks in block comments
 set formatoptions+=r
-
-"}}}
+ " trigger `autoread` when files changes on disk
+set autoread
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+" notification after file change
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
 " Highlights "{{{
 " ---------------------------------------------------------------------
+" Enable CursorLine
 set cursorline
-"set cursorcolumn
 
-" Set cursor line color on visual mode
 highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
-
 highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
+
 
 augroup BgHighlight
   autocmd!
@@ -85,6 +94,7 @@ if &term =~ "screen"
   autocmd BufEnter * if bufname("") !~ "^?[A-Za-z0-9?]*://" | silent! exe '!echo -n "\ek[`hostname`:`basename $PWD`/`basename %`]\e\\"' | endif
   autocmd VimLeave * silent!  exe '!echo -n "\ek[`hostname`:`basename $PWD`]\e\\"'
 endif
+
 
 "}}}
 
@@ -140,8 +150,15 @@ if exists("&termguicolors") && exists("&winblend")
   set background=dark
   " Use NeoSolarized
   let g:neosolarized_termtrans=1
+  let g:neosolarized_contrast='high'
   runtime ./colors/NeoSolarized.vim
   colorscheme NeoSolarized
+
+  "colorscheme nightfox
+
+  hi Cursor guifg=green guibg=green
+  hi Cursor2 guifg=red guibg=red
+  set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
 endif
 
 "}}}
