@@ -31,8 +31,13 @@ No | Name | Desc | Link
 3 | :PlugInstall | run command in neovim to install Plug |
 4 | :LspInstall | run command in neovim to install Lsp |
 
+## Command 
+Shortcut | Desc
+------------- | -------------
+/{text} | search text
+:%s/{text1}/{text2}/g | find and replace all text1 by text2
 
-# Common Shortcut #
+# Common Shortcut 
 
 ### File
 Shortcut | Desc
