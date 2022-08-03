@@ -1,5 +1,7 @@
+<p align="center">
+  <img height="600" src="https://github.com/minhnvc/my-dotfiles/blob/master/screenshot.png?raw=true">
+</p>
 Just install by the order below:
-
 ## 1. Fish shell
 
 No | Name | Desc | Link
