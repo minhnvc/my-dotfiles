@@ -31,7 +31,7 @@ if has("nvim")
   Plug 'L3MON4D3/LuaSnip'
   Plug 'EdenEast/nightfox.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
-
+  Plug 'navarasu/onedark.nvim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

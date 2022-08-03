@@ -149,16 +149,15 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
   set background=dark
   " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  let g:neosolarized_contrast='high'
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
-
+  "let g:neosolarized_termtrans=1
+  "let g:neosolarized_contrast='high'
+  "runtime ./colors/NeoSolarized.vim
+  "colorscheme NeoSolarized
   "colorscheme nightfox
-
-  hi Cursor guifg=green guibg=green
-  hi Cursor2 guifg=red guibg=red
-  set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
+  let g:onedark_config = {
+    \'transparent': 'true',
+  \}
+  colorscheme onedark
 endif
 
 "}}}
