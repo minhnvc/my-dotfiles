@@ -32,6 +32,7 @@ if has("nvim")
   Plug 'EdenEast/nightfox.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
   Plug 'navarasu/onedark.nvim'
+  Plug 'wakatime/vim-wakatime'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

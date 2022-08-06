@@ -7,3 +7,4 @@ rm -rf .config/flutter
 rm -rf .config/iterm2
 rm -rf .config/karabiner
 cp ~/.tmux* ./
+cp ~/.gitconfig ./

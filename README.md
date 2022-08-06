@@ -22,6 +22,7 @@ No | Name
 2 | diagnostic-languageserver
 3 | tree-sitter-cli
 4 | prettier
+5 | prettier_d_slim
 
 
 ## 3. Neovim
