@@ -26,7 +26,7 @@ No | Name | Desc
 4 | prettier
 5 | prettier_d_slim | a faster version of prettier
 6 | commitizen | for git cz
-
+7 | cz-conventional-changelog | Conventional commit messages as a global 
 
 ## 3. Neovim
 No | Name | Desc | Link
