@@ -18,13 +18,14 @@ No | Name | Desc | Link
 8 | tmux | terminal multiplexer | https://github.com/tmux/tmux/wiki
 
 ## 2. Node global package
-No | Name 
-------------- | ------------- 
+No | Name | Desc
+------------- | -------------  | -------------
 1 | Node - nvm install latest
 2 | diagnostic-languageserver
 3 | tree-sitter-cli
 4 | prettier
-5 | prettier_d_slim
+5 | prettier_d_slim | a faster version of prettier
+6 | commitizen | for git cz
 
 
 ## 3. Neovim
