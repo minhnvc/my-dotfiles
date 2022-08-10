@@ -24,7 +24,7 @@ No | Name | Desc
 2 | diagnostic-languageserver
 3 | tree-sitter-cli
 4 | prettier
-5 | prettier_d_slim | a faster version of prettier
+5 | prettierd | prettier, as a daemon
 6 | commitizen | for git cz
 7 | cz-conventional-changelog | Conventional commit messages as a global 
 
@@ -32,10 +32,10 @@ No | Name | Desc
 No | Name | Desc | Link
 ------------- | ------------- | ------------- | -------------
 1 | Neovim | 0.7.0+ | https://neovim.io/
-2 | vim-plug | Vim plugin manager | https://github.com/junegunn/vim-plug
+2 | Packer | Fish's plugin manager | https://github.com/wbthomason/packer.nvim
 3 | clone my dotfiles | place them at ~/| ~/.config ~/.tmux.config etc
-3 | :PlugInstall | run command in neovim to install Plug |
-4 | :LspInstall | run command in neovim to install Lsp |
+4 | :PackerInstall | run command in neovim to install Plug |
+5 | :Mason | lsp, linter, formatter manager |
 
 ## Command 
 Shortcut | Desc
