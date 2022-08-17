@@ -1,6 +1,5 @@
 require('onedark').setup {
-  style = 'darker',
+  style = 'dark',
   transparent = true
 }
 require('onedark').load()
-
