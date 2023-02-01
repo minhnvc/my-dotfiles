@@ -72,6 +72,12 @@ ci' | delete & edit content in '
 change c to v | select content
 change c to d | delete content
 
+### Find & replace
+Shortcut | Desc
+------------- | -------------
+/text | Find a text, `n` next, `N` previous 
+:%s/old-text/new-text/g | Find and replace all
+
 ### Pane
 Shortcut | Desc
 ------------- | -------------
